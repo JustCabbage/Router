@@ -5,7 +5,7 @@ This is an implementation of a Router in PHP 8, primarily inspired by the MVC pa
 
 ## Usage
 This project requires [Docker](https://www.docker.com/) to be deployed. To do so, run
-``docker-compose up`` and a container with NGINX and PHP 8 will be deployed.
+``docker-compose up`` and a container with NGINX and PHP 8 will be deployed on the port 8000.
 
 ## Credits
 - [Program With Gio](https://www.youtube.com/playlist?list=PLr3d3QYzkw2xabQRUpcZ_IBk9W50M9pe-) - Allowed me to get a good base understanding of PHP 8 and how it should be used in an OOP context
