@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  application:
+    image: php:8.0-fpm
+    container_name: cabbage-dev-php
+    working_dir: /var/www
+    volumes:
+      - ./src:/var/www
+  
+  nginx:
+    image: nginx:1.22-alpine
+    container_name: cabbage-dev-nginx
+    ports:
+      - "8000:80" 
+    volumes:
+      - ./src:/var/www
+      - ./nginx/:/etc/nginx/conf.d
